@@ -5,6 +5,8 @@ defmodule Maule.Mixfile do
     [app: :maule,
      version: "0.0.1",
      elixir: "~> 0.13.0-dev",
+     escript_main_module: Maule.Cli,
+     escript_path: "_build/maule",
      deps: deps]
   end
 
