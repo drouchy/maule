@@ -27,8 +27,12 @@ defmodule Maule.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [ applications: [],
-      mod: { Maule, [] } ]
+    [
+      applications: [
+        :exlager
+      ],
+      mod: { Maule, [] }
+    ]
   end
 
   # List all dependencies in the format:
@@ -38,6 +42,7 @@ defmodule Maule.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps(:test) do
     [
+      { :mock, github: "jjh42/mock" }
     ] ++ deps(:default)
   end
 
