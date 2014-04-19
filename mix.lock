@@ -1,5 +1,14 @@
-%{"exlager": {:git, "git://github.com/khia/exlager.git", "d3d73b2a3d0f7b8f3da11a02b5f9384da6c62110", []},
+%{"continuum": {:git, "git://github.com/meh/continuum.git", "bd9e467fb37f68bd83211b3c5cae85700ebd3cf6", []},
+  "cookiejar": {:git, "git://github.com/d0rc/elixir-cookiejar.git", "5bbd3704eb797b2de484885098d6bb7e0da6c224", []},
+  "exlager": {:git, "git://github.com/khia/exlager.git", "d3d73b2a3d0f7b8f3da11a02b5f9384da6c62110", []},
   "goldrush": {:git, "git://github.com/DeadZen/goldrush.git", "71e63212f12c25827e0c1b4198d37d5d018a7fec", [tag: "0.1.6"]},
+  "hackney": {:git, "git://github.com/benoitc/hackney.git", "7f2a0b5996313d930277786e7ff5d538e9346547", [tag: "0.10.1"]},
+  "hackney_lib": {:git, "https://github.com/benoitc/hackney_lib.git", "eecdb481f1d38bfb194896bffdf9bdcdd967ae96", [tag: "0.2.2"]},
+  "httpoison": {:git, "git://github.com/edgurgel/httpoison.git", "d58c88692ceb8243ac88677d5e938a2ba04c8a6a", []},
+  "jsex": {:git, "git://github.com/talentdeficit/jsex.git", "627b6b2980a03efa67f77a58d746fc01201b8a93", []},
+  "jsx": {:git, "git://github.com/talentdeficit/jsx.git", "4f63503aa2f92dc824e5b5a7f3c0f0fe283e4b0b", [tag: "v2.0"]},
   "lager": {:git, "https://github.com/basho/lager.git", "4d8291edb72a25ac0efde907e2ecaa115108ff90", []},
   "meck": {:git, "git://github.com/eproxus/meck.git", "2447206f201bab1054c49cd32621eee23fa0ee3b", [tag: "0.7.2"]},
-  "mock": {:git, "git://github.com/jjh42/mock.git", "0f9b4d16884ddc112ddc694622f95b61973fddd8", []}}
+  "mimetypes": {:git, "git://github.com/spawngrid/mimetypes.git", "47d37a977a7d633199822bf6b08353007483d00f", [ref: "master"]},
+  "mock": {:git, "git://github.com/jjh42/mock.git", "0f9b4d16884ddc112ddc694622f95b61973fddd8", []},
+  "webtest": {:git, "git://github.com/d0rc/webtest.git", "19d66e1a373718b9a47f507a0374cc93b4e4ab1d", []}}

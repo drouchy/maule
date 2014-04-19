@@ -8,7 +8,7 @@ defmodule Maule.Supervisor do
   def init([]) do
     children = [
       # Define workers and child supervisors to be supervised
-      # worker(Maule.Worker, [arg1, arg2, arg3])
+      worker(Maule.Workers.ConsoleWorker, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/Supervisor.Behaviour.html

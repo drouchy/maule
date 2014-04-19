@@ -42,7 +42,8 @@ defmodule Maule.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps(:test) do
     [
-      { :mock, github: "jjh42/mock" }
+      { :mock,    github: "jjh42/mock"   },
+      { :webtest, github: "d0rc/webtest" }
     ] ++ deps(:default)
   end
 
