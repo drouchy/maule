@@ -7,7 +7,20 @@ defmodule Maule.Mixfile do
      elixir: "~> 0.13.0-dev",
      escript_main_module: Maule.Cli,
      escript_path: "_build/maule",
-     deps: deps]
+     elixirc_options: options(Mix.env),
+     deps: deps(Mix.env)]
+  end
+
+  def options(:dev) do
+    [exlager_level: :debug]
+  end
+
+  def options(:test) do
+    [exlager_level: :emergency]
+  end
+
+  def options(:prod) do
+    [exlager_level: :warning]
   end
 
   # Configuration for the OTP application
@@ -23,7 +36,14 @@ defmodule Maule.Mixfile do
   # { :foobar, git: "https://github.com/elixir-lang/foobar.git", tag: "0.1" }
   #
   # Type `mix help deps` for more examples and options
-  defp deps do
-    []
+  defp deps(:test) do
+    [
+    ] ++ deps(:default)
+  end
+
+  defp deps(_) do
+    [
+      { :exlager, [ github: "khia/exlager" ] }
+    ]
   end
 end
