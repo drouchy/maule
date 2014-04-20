@@ -17,4 +17,20 @@ defmodule SearchSupervisor do
       assert new_pid != pid
     end
   end
+
+  test "it starts the config worker" do
+    assert Process.whereis(:maule_config) != nil
+  end
+
+  test "it restarts the config worker when it crashes" do
+    pid = Process.whereis(:maule_config)
+
+    Process.exit pid, :to_test
+
+    with_retries 5, 10 do
+      new_pid = Process.whereis(:maule_config)
+      assert new_pid != nil
+      assert new_pid != pid
+    end
+  end
 end
