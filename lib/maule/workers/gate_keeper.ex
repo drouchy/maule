@@ -38,7 +38,7 @@ defmodule Maule.Workers.GateKeeper do
 
   defp open_gate(options, from, to) do
     pid = options
-      |> Maule.Ssh.GateCommand.open_gate_command(from, to)
+      |> Maule.OsCommands.GateCommand.open_gate_command(from, to)
       |> run_command
 
     register_gate(options, from, to, pid)

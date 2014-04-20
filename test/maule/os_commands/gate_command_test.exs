@@ -1,7 +1,7 @@
 defmodule GateCommandTest do
   use ExUnit.Case
 
-  import Maule.Ssh.GateCommand
+  import Maule.OsCommands.GateCommand
 
   test "generates a basic ssh command with a local tunnel" do
     options = [port: 2222]

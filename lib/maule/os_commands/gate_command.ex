@@ -1,4 +1,4 @@
-defmodule Maule.Ssh.GateCommand do
+defmodule Maule.OsCommands.GateCommand do
   def open_gate_command(options, from, to) do
     "ssh #{local_user(options)}#{from} #{identity(options)}-L #{options[:port]}:#{to}:22 -N"
   end
