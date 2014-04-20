@@ -29,7 +29,6 @@ defmodule Maule.Mixfile do
   def application do
     [
       applications: [
-        :exlager
       ],
       mod: { Maule, [] }
     ]
