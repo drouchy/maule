@@ -49,7 +49,8 @@ defmodule Maule.Mixfile do
 
   defp deps(_) do
     [
-      { :exlager, [ github: "khia/exlager" ] }
+      { :exlager, github: "khia/exlager"       },
+      { :jsex,    github: "talentdeficit/jsex" }
     ]
   end
 end
